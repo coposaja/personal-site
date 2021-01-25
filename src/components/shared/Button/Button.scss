@@ -1,0 +1,36 @@
+@import '../../../assets/styles/index.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.btn {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  &.btn-small {
+    font-size: 1rem;
+    padding: 0.375 0.75rem;
+  }
+
+  &.disabled {
+    opacity: 0.65;
+    cursor: unset;
+  }
+
+  &-outline-light {
+    @include outline-button($light, $dark);
+  }
+
+  &-outline-primary {
+    @include outline-button($primary, $light);
+  }
+
+  &-solid-primary {
+    @include solid-button($primary, $light);
+  }
+}
