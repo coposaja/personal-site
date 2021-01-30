@@ -1,0 +1,11 @@
+@import '../../../assets/styles/mixins.scss';
+
+.col {
+  width: 100%;
+  min-height: 1px;
+  padding: 1rem;
+}
+
+@include sm-x;
+@include md-x;
+@include lg-x;

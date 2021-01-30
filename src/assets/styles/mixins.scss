@@ -32,28 +32,28 @@
   }
 }
 
-@mixin col-sm-x {
+@mixin sm-x {
   @for $i from 1 through $columns {
-    .col-sm-#{$i} {
+    .sm-#{$i} {
       width: ($i/$columns) * 100% !important;
     }
   }
 }
 
-@mixin col-md-x {
+@mixin md-x {
   @for $i from 1 through $columns {
-    @media screen and (min-width: 480px) {
-      .col-md-#{$i} {
+    @media screen and (min-width: 481px) {
+      .md-#{$i} {
         width: ($i/$columns) * 100% !important;
       } 
     }
   }
 }
 
-@mixin col-lg-x {
+@mixin lg-x {
   @for $i from 1 through $columns {
-    @media screen and (min-width: 768px) {
-      .col-lg-#{$i} {
+    @media screen and (min-width: 769px) {
+      .lg-#{$i} {
         width: ($i/$columns) * 100% !important;
       } 
     }
