@@ -1,0 +1,17 @@
+@import '../../../assets/styles/variables.scss';
+
+.octagon {
+  width: 50%;
+  padding-top: 50%;
+  position: relative;
+  background: $primary;
+  margin: auto;
+  clip-path: polygon(25% 0, 75% 0, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0 75%, 0 25%);
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
