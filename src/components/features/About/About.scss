@@ -1,0 +1,41 @@
+@import '../../../assets/styles/variables.scss';
+
+.about--container {
+  height: 100vh;
+  background: $light;
+}
+
+.about--wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: auto;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+.about--badges {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+  svg {
+    font-size: 4rem;
+    color: $light;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    color: $dark;
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 0.75rem;
+    color: $gray;
+    line-height: 1.5;
+  }
+}
