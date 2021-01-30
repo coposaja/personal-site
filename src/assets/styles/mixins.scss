@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @mixin outline-button($color, $text-color) {
   border: 2px solid $color;
   background: none;
@@ -26,6 +28,34 @@
   &.disabled {
     &:hover {
       background: $color;
+    }
+  }
+}
+
+@mixin col-sm-x {
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      width: ($i/$columns) * 100% !important;
+    }
+  }
+}
+
+@mixin col-md-x {
+  @for $i from 1 through $columns {
+    @media screen and (min-width: 480px) {
+      .col-md-#{$i} {
+        width: ($i/$columns) * 100% !important;
+      } 
+    }
+  }
+}
+
+@mixin col-lg-x {
+  @for $i from 1 through $columns {
+    @media screen and (min-width: 768px) {
+      .col-lg-#{$i} {
+        width: ($i/$columns) * 100% !important;
+      } 
     }
   }
 }
