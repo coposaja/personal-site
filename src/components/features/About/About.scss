@@ -1,7 +1,7 @@
 @import '../../../assets/styles/variables.scss';
 
 .about--container {
-  height: 100vh;
+  min-height: 100vh;
   background: $light;
 }
 
@@ -21,6 +21,10 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+
+  .octagon {
+    margin: auto;
+  }
 
   svg {
     font-size: 4rem;
