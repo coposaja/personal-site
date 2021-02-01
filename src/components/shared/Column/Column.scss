@@ -4,6 +4,10 @@
   width: 100%;
   min-height: 1px;
   padding: 1rem;
+
+  &.no-padding {
+    padding: 0
+  }
 }
 
 @include sm-x;
