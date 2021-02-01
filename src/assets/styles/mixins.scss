@@ -32,6 +32,31 @@
   }
 }
 
+@mixin link-button($color) {
+  border: none;
+  background: none;
+  color: $color;
+  padding: 0 !important;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0px;
+    height: 2px;
+    transition: 0.25s ease-in-out;
+    background-color: lighten($color, 10%);
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 @mixin sm-x {
   @for $i from 1 through $columns {
     .sm-#{$i} {
