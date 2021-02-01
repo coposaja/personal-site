@@ -7,7 +7,7 @@ const colors = [
 ];
 
 const types = [
-  'solid', 'outline'
+  'solid', 'outline', 'link'
 ];
 
 const sizes = [

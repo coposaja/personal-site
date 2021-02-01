@@ -33,4 +33,8 @@
   &-solid-primary {
     @include solid-button($primary, $light);
   }
+
+  &-link-primary {
+    @include link-button($primary)
+  }
 }
