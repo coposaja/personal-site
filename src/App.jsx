@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { About, Hero, WhoAmI } from './components/';
+import { About, Hero, Project, WhoAmI } from './components/';
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Hero />
       <About />
       <WhoAmI />
+      <Project />
     </>
   )
 }

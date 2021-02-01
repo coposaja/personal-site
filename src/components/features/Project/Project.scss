@@ -1,0 +1,28 @@
+@import '../../../assets/styles/variables.scss';
+
+.project--container {
+  height: 100vh;
+  background: $light;
+}
+
+.project--wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.project--content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+
+  .col {
+    margin: auto;
+  }
+}
