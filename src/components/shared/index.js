@@ -4,6 +4,7 @@ import Column from './Column';
 import Octagon from './Octagon';
 import YearNavigator from './YearNavigator';
 import ProjectCard from './ProjectCard';
+import TechIcon from './TechIcon';
 
 export {
   Button,
@@ -12,4 +13,5 @@ export {
   Octagon,
   YearNavigator,
   ProjectCard,
+  TechIcon,
 }
