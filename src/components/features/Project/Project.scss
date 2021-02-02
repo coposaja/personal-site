@@ -1,7 +1,7 @@
 @import '../../../assets/styles/variables.scss';
 
 .project--container {
-  height: 100vh;
+  min-height: 100vh;
   background: $light;
 }
 
