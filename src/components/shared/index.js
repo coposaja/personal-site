@@ -5,6 +5,7 @@ import Octagon from './Octagon';
 import YearNavigator from './YearNavigator';
 import ProjectCard from './ProjectCard';
 import TechIcon from './TechIcon';
+import NavigationLink from './NavigationLink';
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   YearNavigator,
   ProjectCard,
   TechIcon,
+  NavigationLink,
 }

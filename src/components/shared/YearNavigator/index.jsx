@@ -6,7 +6,7 @@ const years = [0, 2017, 2018, 2019, 2020];
 
 const YearNavigator = ({ activeYear, changeYear }) => {
   return (
-    <nav>
+    <nav className="year-navigator">
       <ul>
         {years.map((year) => (
           <li
