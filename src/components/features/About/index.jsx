@@ -7,7 +7,7 @@ import { Card, Column, Octagon } from '../../shared';
 
 const About = () => {
   return (
-    <div className="about--container">
+    <div className="about--container" id="about-me">
       <div className="about--wrapper">
         <h1>About Me</h1>
         <div className="about--badges">

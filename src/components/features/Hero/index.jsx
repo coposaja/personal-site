@@ -6,7 +6,7 @@ import { Button } from '../../shared';
 
 const Hero = () => {
   return (
-    <div className="hero--wrapper">
+    <div className="hero--wrapper" id="home">
       <video src={backgroundUrl} autoPlay loop muted />
       <div className="hero--content">
         <h1>I'm <span>Yohanzen C. Alexander</span> a Software Engineer</h1>

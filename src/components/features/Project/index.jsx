@@ -10,7 +10,7 @@ const Project = () => {
   const [selectedYear, setSelectedYear] = useState(0);
 
   return (
-    <div className="project--container">
+    <div className="project--container" id="project">
       <div className="project--wrapper">
         <h1>Projects</h1>
 

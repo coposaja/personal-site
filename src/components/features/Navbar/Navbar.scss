@@ -1,0 +1,52 @@
+@import '../../../assets/styles/variables.scss';
+
+.navbar {
+  height: 4rem;
+  margin-top: -4rem;
+  background: $dark;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3 ease-in-out;
+
+  &.transparent {
+    background: transparent;
+  }
+}
+
+.navbar--container {
+  height: 100%;
+  width: 100%;
+  max-width: 1200;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .navbar--navigations {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    list-style: none;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .navbar--toggle {
+    display: none;
+    color: $light;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    @media screen and (max-width: 767px) {
+      display: block
+    }
+  }
+}

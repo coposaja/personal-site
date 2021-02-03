@@ -7,7 +7,7 @@ import { Button, Column } from '../../shared';
 
 const WhoAmI = () => {
   return (
-    <div className="whoami--container">
+    <div className="whoami--container" id="who-am-i">
       <div className="whoami--wrapper">
         <h1>Who's This Guy?</h1>
         <div className="whoami--content">

@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { About, Contact, Hero, Project, Technology, WhoAmI } from './components/';
+import { About, Contact, Navbar, Hero, Project, Technology, WhoAmI } from './components/';
 
 const App = () => {
   return (
     <>
+      <Navbar />
       <Hero />
       <About />
       <WhoAmI />

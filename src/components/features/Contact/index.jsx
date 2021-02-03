@@ -5,7 +5,7 @@ import { Button } from '../../shared';
 
 const Contact = () => {
   return (
-    <div className="contact--container">
+    <div className="contact--container" id="contact">
       <div className="contact--wrapper">
         <h1>Let's Create Something Great!</h1>
         <p>

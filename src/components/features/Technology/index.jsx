@@ -15,7 +15,7 @@ import {
 
 const Technology = () => {
   return (
-    <div className="technology--container">
+    <div className="technology--container" id="technology">
       <div className="technology--wrapper">
         <h1>Related Techs</h1>
 
