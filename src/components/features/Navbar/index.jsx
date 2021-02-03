@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { NavigationLink } from '../../shared';
+import { FaBars } from 'react-icons/fa';
 
 import './Navbar.scss';
 
-const Navbar = () => {
+const Navbar = ({ toggleHandler }) => {
   const [scrolled, setScrolled] = useState(false);
 
   const onWindowScroll = () => {
@@ -46,6 +47,9 @@ const Navbar = () => {
             label="Contact"
           />
         </ul>
+        <div className="navbar--toggle" onClick={toggleHandler}>
+          <FaBars />
+        </div>
       </div>
     </nav>
   )

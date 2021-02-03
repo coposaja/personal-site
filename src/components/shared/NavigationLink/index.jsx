@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 import './NavigationLink.scss';
 
-const NavigationLink = ({ to, label }) => {
+const NavigationLink = ({ to, label, clickHandler }) => {
   return (
     <Link
       to={to}
@@ -11,6 +11,7 @@ const NavigationLink = ({ to, label }) => {
       offset={-64}
       smooth
       spy
+      onClick={clickHandler ? clickHandler : () => { }}
       className="navigation-link"
     >
       {label}

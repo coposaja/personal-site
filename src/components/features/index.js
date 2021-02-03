@@ -5,6 +5,7 @@ import Project from './Project';
 import Technology from './Technology';
 import Contact from './Contact';
 import Navbar from './Navbar';
+import Sidebar from './Sidebar';
 
 export {
   Hero,
@@ -14,4 +15,5 @@ export {
   Technology,
   Contact,
   Navbar,
+  Sidebar,
 }
