@@ -6,6 +6,7 @@ import Technology from './Technology';
 import Contact from './Contact';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+import Footer from './Footer';
 
 export {
   Hero,
@@ -16,4 +17,5 @@ export {
   Contact,
   Navbar,
   Sidebar,
+  Footer,
 }

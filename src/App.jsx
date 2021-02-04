@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { About, Contact, Navbar, Hero, Project, Technology, WhoAmI, Sidebar } from './components/';
+import { About, Contact, Navbar, Hero, Project, Technology, WhoAmI, Sidebar, Footer } from './components/';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,6 +19,7 @@ const App = () => {
       <Project />
       <Technology />
       <Contact />
+      <Footer />
     </>
   )
 }

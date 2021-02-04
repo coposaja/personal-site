@@ -1,0 +1,64 @@
+@import '../../../assets/styles/variables.scss';
+
+footer {
+  background: darken($color: #341948, $amount: 10);
+}
+
+.footer--wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 3rem 2rem;
+  margin: auto;
+  color: $light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  p {
+    margin-top: 2rem;
+
+    span {
+      color: $primary;
+    }
+  }
+}
+
+.social--badges {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+
+  .socmed {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    color: $light;
+
+    &.linkedin {
+      &:hover {
+        color: #0A66C2;
+      }
+    }
+    &.github {
+      &:hover {
+        color: #181717;
+        background: $light;
+        border-radius: 100%;
+      }
+    }
+    &.telegram {
+      &:hover {
+        color: #2DA5E1;
+      }
+    }
+    &.whatsapp {
+      &:hover {
+        color: #40C352;
+      }
+    }
+  }
+}
