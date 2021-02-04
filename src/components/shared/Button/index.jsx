@@ -19,6 +19,7 @@ const Button = ({
   type,
   color,
   size,
+  handleClick,
   disabled = false,
   ...rest
 }) => {
@@ -30,6 +31,7 @@ const Button = ({
   return (
     <button
       className={`btn btn-${type}-${color} btn-${size} ${disabled && 'disabled'}`}
+      onClick={handleClick ? handleClick : () => { }}
     >
       {children}
     </button>
