@@ -6,6 +6,7 @@ import YearNavigator from './YearNavigator';
 import ProjectCard from './ProjectCard';
 import TechIcon from './TechIcon';
 import NavigationLink from './NavigationLink';
+import Backdrop from './Backdrop';
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   ProjectCard,
   TechIcon,
   NavigationLink,
+  Backdrop,
 }
