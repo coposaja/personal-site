@@ -22,11 +22,6 @@ const Sidebar = ({ isOpen, toggleHandler }) => {
           clickHandler={toggleHandler}
         />
         <NavigationLink
-          to="who-am-i"
-          label="Who Am I"
-          clickHandler={toggleHandler}
-        />
-        <NavigationLink
           to="project"
           label="Projects"
           clickHandler={toggleHandler}

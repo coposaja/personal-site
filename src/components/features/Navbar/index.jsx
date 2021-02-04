@@ -31,10 +31,6 @@ const Navbar = ({ toggleHandler }) => {
             label="About Me"
           />
           <NavigationLink
-            to="who-am-i"
-            label="Who Am I"
-          />
-          <NavigationLink
             to="project"
             label="Projects"
           />

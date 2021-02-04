@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { About, Contact, Navbar, Hero, Project, Technology, WhoAmI, Sidebar, Footer } from './components/';
+import { About, Contact, Navbar, Hero, Project, Technology, Sidebar, Footer } from './components/';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -15,7 +15,6 @@ const App = () => {
       <Sidebar isOpen={sidebarOpen} toggleHandler={toggleSidebar} />
       <Hero />
       <About />
-      <WhoAmI />
       <Project />
       <Technology />
       <Contact />
