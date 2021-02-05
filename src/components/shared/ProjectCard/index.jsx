@@ -1,12 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import './ProjectCard.scss';
-import { Button, ProjectDetail } from '..';
-import Modal from '../Modal';
-import { ModalContext } from '../../../context';
+import { Button } from '..';
 
-const ProjectCard = ({ title, techs, backgroundUrl }) => {
-  const [isOpenModal, setIsOpenModal] = useContext(ModalContext);
+const ProjectCard = ({ title, techs, backgroundUrl, description, handleClick }) => {
   return (
     <div className="project-card" style={{ backgroundImage: `url(${backgroundUrl})` }}>
       <div className="overlay">
@@ -17,12 +14,13 @@ const ProjectCard = ({ title, techs, backgroundUrl }) => {
         <Button
           type="outline"
           color="primary"
-          handleClick={() => { setIsOpenModal(true) }}
+          handleClick={() => {
+            handleClick(title, techs, [], description)
+          }}
         >
           LEARN MORE
         </Button>
       </div>
-      {isOpenModal && <Modal><ProjectDetail /></Modal>}
     </div>
   )
 }
