@@ -38,6 +38,7 @@ const Project = () => {
               title="BIDUK"
               techs="ASP.NET | Web Forms"
               backgroundUrl={bidukImg}
+              imageUrls={[1, 2, 3, 4]}
               description="A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
               handleClick={onProjectDetailOpen}
             />
@@ -47,6 +48,7 @@ const Project = () => {
               title="IAI Membership"
               techs="ASP.NET | Modified MVC"
               backgroundUrl={iaiImg}
+              imageUrls={[1, 2, 3, 4]}
               description="A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
               handleClick={onProjectDetailOpen}
             />
@@ -56,6 +58,7 @@ const Project = () => {
               title="KAJ Pelayanan"
               techs="ASP.NET | Modified MVC | REST API"
               backgroundUrl={kajImg}
+              imageUrls={[1, 2, 3, 4]}
               description="A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
               handleClick={onProjectDetailOpen}
             />

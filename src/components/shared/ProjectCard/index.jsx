@@ -3,7 +3,7 @@ import React from 'react';
 import './ProjectCard.scss';
 import { Button } from '..';
 
-const ProjectCard = ({ title, techs, backgroundUrl, description, handleClick }) => {
+const ProjectCard = ({ title, techs, backgroundUrl, imageUrls, description, handleClick }) => {
   return (
     <div className="project-card" style={{ backgroundImage: `url(${backgroundUrl})` }}>
       <div className="overlay">
@@ -15,7 +15,7 @@ const ProjectCard = ({ title, techs, backgroundUrl, description, handleClick }) 
           type="outline"
           color="primary"
           handleClick={() => {
-            handleClick(title, techs, [], description)
+            handleClick(title, techs, imageUrls, description)
           }}
         >
           LEARN MORE
