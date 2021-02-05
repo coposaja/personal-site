@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import './ProjectCard.scss';
-import { Button } from '..';
+import { Button, ProjectDetail } from '..';
 import Modal from '../Modal';
 import { ModalContext } from '../../../context';
 
@@ -22,7 +22,7 @@ const ProjectCard = ({ title, techs, backgroundUrl }) => {
           LEARN MORE
         </Button>
       </div>
-      {isOpenModal && <Modal><h1>Test</h1></Modal>}
+      {isOpenModal && <Modal><ProjectDetail /></Modal>}
     </div>
   )
 }

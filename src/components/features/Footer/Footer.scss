@@ -18,9 +18,16 @@ footer {
 
   p {
     margin-top: 2rem;
+    text-align: center;
 
-    span {
+    .copyright {
       color: $primary;
+    }
+
+    .non-mobile {
+      @media screen and (max-width: 480px) {
+        visibility: hidden;
+      }
     }
   }
 }

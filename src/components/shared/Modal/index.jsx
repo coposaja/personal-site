@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useCallback, useContext, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 import './Modal.scss';
@@ -8,10 +8,24 @@ const Modal = ({ children }) => {
   const [, setBackdropOpen] = useContext(BackdropContext);
   const [, setModalOpen] = useContext(ModalContext);
 
-  const dismissModal = () => {
-    setBackdropOpen(false);
-    setModalOpen(false);
-  }
+  const dismissModal = useCallback(
+    () => {
+      setBackdropOpen(false);
+      setModalOpen(false);
+    },
+    [setBackdropOpen, setModalOpen],
+  );
+
+  useEffect(() => {
+    const dismissOnEscape = (e) => {
+      if (e.key === 'Escape') dismissModal();
+    }
+    window.addEventListener('keydown', dismissOnEscape);
+
+    return () => {
+      window.removeEventListener('keydown', dismissOnEscape);
+    }
+  }, [dismissModal])
 
   useEffect(() => {
     setBackdropOpen(true);

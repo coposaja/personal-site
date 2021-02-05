@@ -9,12 +9,13 @@
   border-radius: 0.5rem;
   z-index: 1001;
   overflow: hidden;
-  animation: fade-in 0.8s linear 0s normal forwards;
+  animation: fade-in 0.7s linear 0s normal forwards;
 
   .modal--close {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
   }
 }

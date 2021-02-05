@@ -8,6 +8,7 @@ import TechIcon from './TechIcon';
 import NavigationLink from './NavigationLink';
 import Backdrop from './Backdrop';
 import Modal from './Modal';
+import ProjectDetail from './ProjectDetail';
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   NavigationLink,
   Backdrop,
   Modal,
+  ProjectDetail,
 }

@@ -1,0 +1,30 @@
+@import '../../../assets/styles/variables.scss';
+
+.project-detail--container {
+  width: 100vw;
+  max-width: 700px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.project-detail--content {
+  padding: 0 1.5rem;
+
+  .header {
+    margin: 1rem auto;
+    border-bottom: 1px solid $gray;
+
+    p {
+      margin: 0.25rem auto 0.5rem;
+      color: $primary;
+    }
+  }
+
+  .body {
+    margin-bottom: 1rem;
+    color: $gray;
+  }
+}

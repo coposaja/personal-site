@@ -21,7 +21,11 @@ const Footer = () => {
             <FaWhatsapp />
           </a>
         </div>
-        <p>Yohanzen Christanto Alexander - <span>©{new Date().getFullYear()}</span></p>
+        <p>
+          Yohanzen Christanto Alexander
+          <span className="non-mobile"> - </span>
+          <span className="copyright">©{new Date().getFullYear()}</span>
+        </p>
       </div>
     </footer>
   )
