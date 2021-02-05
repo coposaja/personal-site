@@ -4,7 +4,7 @@ import { GiFist } from 'react-icons/gi';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 
 import './About.scss';
-import profileSrc from '../../../assets/images/profile.svg';
+import { profileImg } from '../../../assets/images';
 import { Card, Button, Column, Octagon } from '../../shared';
 
 const About = () => {
@@ -53,7 +53,7 @@ const About = () => {
       </div>
       <div className="whoami--content">
         <Column lg={6} md={12}>
-          <img src={profileSrc} alt="Profile" />
+          <img src={profileImg} alt="Profile" />
           <div className="whoami--bio">
             <p>
               I'm a Software Engineer in Indonesia. I have a serious passion for developing, designing, and creating applications.

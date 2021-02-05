@@ -1,9 +1,7 @@
 import React, { useContext, useState } from 'react';
 
 import './Project.scss';
-import bidukImg from '../../../assets/images/biduk.svg';
-import kajImg from '../../../assets/images/kaj.svg';
-import iaiImg from '../../../assets/images/iai.svg';
+import { projectList } from '../../../constants';
 import { Column, Modal, ProjectCard, ProjectDetail, YearNavigator } from '../../shared';
 import { ModalContext } from '../../../context';
 
@@ -33,36 +31,18 @@ const Project = () => {
         />
 
         <div className="project--content">
-          <Column lg={4} md={6} sm={12} noPadding>
-            <ProjectCard
-              title="BIDUK"
-              techs="ASP.NET | Web Forms"
-              backgroundUrl={bidukImg}
-              imageUrls={[1, 2, 3, 4]}
-              description="A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
-              handleClick={onProjectDetailOpen}
-            />
-          </Column>
-          <Column lg={4} md={6} sm={12} noPadding>
-            <ProjectCard
-              title="IAI Membership"
-              techs="ASP.NET | Modified MVC"
-              backgroundUrl={iaiImg}
-              imageUrls={[1, 2, 3, 4]}
-              description="A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
-              handleClick={onProjectDetailOpen}
-            />
-          </Column>
-          <Column lg={4} md={6} sm={12} noPadding>
-            <ProjectCard
-              title="KAJ Pelayanan"
-              techs="ASP.NET | Modified MVC | REST API"
-              backgroundUrl={kajImg}
-              imageUrls={[1, 2, 3, 4]}
-              description="A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
-              handleClick={onProjectDetailOpen}
-            />
-          </Column>
+          {projectList && projectList.map((project, idx) => (
+            <Column lg={4} md={6} sm={12} noPadding key={idx}>
+              <ProjectCard
+                title={project.title}
+                techs={project.techs}
+                backgroundUrl={project.backgroundUrl}
+                imageUrls={project.imageUrls}
+                description={project.description}
+                handleClick={onProjectDetailOpen}
+              />
+            </Column>
+          ))}
         </div>
       </div>
 
