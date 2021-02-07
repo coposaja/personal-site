@@ -60,7 +60,7 @@
 @mixin sm-x {
   @for $i from 1 through $columns {
     .sm-#{$i} {
-      width: ($i/$columns) * 100% !important;
+      width: ($i/$columns) * 100%;
     }
   }
 }
@@ -69,7 +69,7 @@
   @for $i from 1 through $columns {
     @media screen and (min-width: 481px) {
       .md-#{$i} {
-        width: ($i/$columns) * 100% !important;
+        width: ($i/$columns) * 100%;
       } 
     }
   }
@@ -79,7 +79,7 @@
   @for $i from 1 through $columns {
     @media screen and (min-width: 769px) {
       .lg-#{$i} {
-        width: ($i/$columns) * 100% !important;
+        width: ($i/$columns) * 100%;
       } 
     }
   }

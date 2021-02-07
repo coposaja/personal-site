@@ -1,6 +1,6 @@
 import Button from './Button';
 import Card from './Card';
-import Column from './Column';
+import { Column, AnimatedColumn } from './Column';
 import Octagon from './Octagon';
 import YearNavigator from './YearNavigator';
 import ProjectCard from './ProjectCard';
@@ -22,4 +22,5 @@ export {
   Backdrop,
   Modal,
   ProjectDetail,
+  AnimatedColumn,
 }
