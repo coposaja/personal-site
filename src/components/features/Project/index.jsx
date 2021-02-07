@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import './Project.scss';
 import { projectList } from '../../../constants';
@@ -8,6 +8,7 @@ import { ModalContext } from '../../../context';
 const Project = () => {
   const [selectedYear, setSelectedYear] = useState(0);
   const [modalContent, setModalContent] = useState(null);
+  const [projects, setProjects] = useState(projectList);
   const [isOpenModal, setIsOpenModal] = useContext(ModalContext);
 
   const onProjectDetailOpen = (title, technologies, imageUrls, description) => {
@@ -20,6 +21,12 @@ const Project = () => {
     setIsOpenModal(true);
   }
 
+  useEffect(() => {
+    setProjects(projectList.filter((project) => (
+      project.years.includes(selectedYear ? selectedYear : project.years[0])
+    )));
+  }, [selectedYear]);
+
   return (
     <div className="project--container" id="project">
       <div className="project--wrapper">
@@ -31,7 +38,7 @@ const Project = () => {
         />
 
         <div className="project--content">
-          {projectList && projectList.map((project, idx) => (
+          {projects && projects.map((project, idx) => (
             <Column lg={4} md={6} sm={12} noPadding key={idx}>
               <ProjectCard
                 title={project.title}

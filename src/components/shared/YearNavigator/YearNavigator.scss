@@ -18,7 +18,7 @@ $width: 100%/$years;
       font-weight: bold;
       cursor: pointer;
   
-      &.active span {
+      &.active p {
         position: relative;
         z-index: 2;
         color: $light;

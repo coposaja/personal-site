@@ -12,11 +12,12 @@ const YearNavigator = ({ activeYear, changeYear }) => {
           <li
             key={year}
             className={year === activeYear ? 'active' : ''}
-            onClick={() => changeYear(year)}
           >
-            <span>
+            <p
+              onClick={() => changeYear(year)}
+            >
               {year ? year : "All"}
-            </span>
+            </p>
           </li>
         ))}
       </ul>
