@@ -11,7 +11,7 @@ import {
   Footer,
   Backdrop
 } from './components/';
-import { BackdropProvider, ModalProvider } from './context';
+import { BackdropProvider, ModalProvider, ThemeProvider } from './context';
 
 const App = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,19 +22,21 @@ const App = () => {
 
   return (
     <>
-      <BackdropProvider>
-        <ModalProvider>
-          <Backdrop />
-          <Navbar toggleHandler={toggleSidebar} />
-          <Sidebar isOpen={sidebarOpen} toggleHandler={toggleSidebar} />
-          <Hero />
-          <About />
-          <Project />
-          <Technology />
-          <Contact />
-          <Footer />
-        </ModalProvider>
-      </BackdropProvider>
+      <ThemeProvider>
+        <BackdropProvider>
+          <ModalProvider>
+            <Backdrop />
+            <Navbar toggleHandler={toggleSidebar} />
+            <Sidebar isOpen={sidebarOpen} toggleHandler={toggleSidebar} />
+            <Hero />
+            <About />
+            <Project />
+            <Technology />
+            <Contact />
+            <Footer />
+          </ModalProvider>
+        </BackdropProvider>
+      </ThemeProvider>
     </>
   )
 }
