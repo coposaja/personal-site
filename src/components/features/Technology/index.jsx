@@ -14,8 +14,10 @@ import {
 
 
 const Technology = () => {
+  const theme = 'light';
+
   return (
-    <div className="technology--container" id="technology">
+    <div className={`technology--container ${theme}`} id="technology">
       <div className="technology--wrapper">
         <h1>Related Techs</h1>
 

@@ -4,7 +4,7 @@ import Carousel, { consts } from 'react-elastic-carousel';
 import './ProjectDetail.scss';
 import { sampleUrl } from '../../../assets/images';
 
-const ProjectDetail = ({ title, technologies, imageUrls, description }) => {
+const ProjectDetail = ({ theme, title, technologies, imageUrls, description }) => {
   const carousel = useRef(null);
 
   const myArrow = ({ type, onClick, isEdge }) => {
@@ -35,7 +35,7 @@ const ProjectDetail = ({ title, technologies, imageUrls, description }) => {
   )
 
   return (
-    <div className="project-detail--container">
+    <div className={`project-detail--container ${theme}`}>
       <Carousel
         ref={carousel}
         itemsToScroll={1}

@@ -29,6 +29,10 @@
   &-outline-primary {
     @include outline-button($primary, $light);
   }
+  
+  &-outline-dark {
+    @include outline-button($dark, $light);
+  }
 
   &-solid-primary {
     @include solid-button($primary, $light);

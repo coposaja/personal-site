@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Card.scss';
 
-const Card = ({ children }) => {
+const Card = ({ theme, children }) => {
   return (
-    <div className="card">
+    <div className={`card ${theme}`}>
       {children}
     </div>
   )

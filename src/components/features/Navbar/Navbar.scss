@@ -3,16 +3,26 @@
 .navbar {
   height: 4rem;
   margin-top: -4rem;
-  background: $dark;
   position: sticky;
   z-index: 10;
   top: 0;
   left: 0;
   right: 0;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &.dark {
+    background: $dark;
+    color: $light;
+  }
+
+  &.light {
+    background: #fff;
+    color: $dark;
+  }
 
   &.transparent {
     background: transparent;
+    color: $light;
   }
 }
 
@@ -39,10 +49,9 @@
 
   .navbar--toggle {
     display: none;
-    color: $light;
     font-size: 2rem;
-    margin-left: auto;
-    margin-right: 1.5rem;
+    margin-right: auto;
+    margin-left: 1.5rem;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 

@@ -3,7 +3,7 @@ import React from 'react';
 import './Button.scss';
 
 const colors = [
-  'primary', 'light'
+  'primary', 'light', 'dark'
 ];
 
 const types = [

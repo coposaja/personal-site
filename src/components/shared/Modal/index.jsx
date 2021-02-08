@@ -5,6 +5,7 @@ import './Modal.scss';
 import { BackdropContext, ModalContext } from '../../../context';
 
 const Modal = ({ children }) => {
+  const theme = 'light';
   const [, setBackdropOpen] = useContext(BackdropContext);
   const [, setModalOpen] = useContext(ModalContext);
 
@@ -32,7 +33,7 @@ const Modal = ({ children }) => {
   }, [setBackdropOpen]);
 
   return (
-    <div className="modal">
+    <div className={`modal ${theme}`}>
       <span className="modal--close" onClick={dismissModal}>
         <FaTimes />
       </span>

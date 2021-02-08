@@ -2,7 +2,16 @@
 
 .project--container {
   min-height: 100vh;
-  background: $light;
+  
+  &.light {
+    background: $light;
+    color: $dark;
+  }
+
+  &.dark {
+    background: $dark;
+    color: $light;
+  }
 }
 
 .project--wrapper {

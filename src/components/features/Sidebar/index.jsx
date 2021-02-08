@@ -5,8 +5,10 @@ import './Sidebar.scss';
 import { NavigationLink } from '../../shared';
 
 const Sidebar = ({ isOpen, toggleHandler }) => {
+  const theme = 'light';
+
   return (
-    <aside className={`sidebar${isOpen ? ' open' : ''}`}>
+    <aside className={`sidebar${isOpen ? ' open' : ''} ${theme}`}>
       <div className="close" onClick={toggleHandler}>
         <FaTimes />
       </div>

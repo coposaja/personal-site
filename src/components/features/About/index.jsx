@@ -8,13 +8,14 @@ import { profileImg } from '../../../assets/images';
 import { Card, Button, Column, Octagon } from '../../shared';
 
 const About = () => {
+  const theme = 'light';
   return (
-    <div className="about--container" id="about-me">
+    <div className={`about--container ${theme}`} id="about-me">
       <div className="about--wrapper">
         <h1>About Me</h1>
         <div className="about--badges">
           <Column lg={3} md={6} sm={12}>
-            <Card>
+            <Card theme={theme}>
               <Octagon>
                 <FaBullseye />
               </Octagon>
@@ -23,7 +24,7 @@ const About = () => {
             </Card>
           </Column>
           <Column lg={3} md={6} sm={12}>
-            <Card>
+            <Card theme={theme}>
               <Octagon>
                 <FaHandshake />
               </Octagon>
@@ -32,7 +33,7 @@ const About = () => {
             </Card>
           </Column>
           <Column lg={3} md={6} sm={12}>
-            <Card>
+            <Card theme={theme}>
               <Octagon>
                 <FaStaylinked />
               </Octagon>
@@ -41,7 +42,7 @@ const About = () => {
             </Card>
           </Column>
           <Column lg={3} md={6} sm={12}>
-            <Card>
+            <Card theme={theme}>
               <Octagon>
                 <GiFist />
               </Octagon>
