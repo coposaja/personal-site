@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { NavigationLink } from '../../shared';
 import { FaBars } from 'react-icons/fa';
 
 import './Navbar.scss';
+import { NavigationLink, ThemeChanger } from '../../shared';
 
 const Navbar = ({ toggleHandler }) => {
-  const theme = 'light';
+  const theme = 'dark';
   const [scrolled, setScrolled] = useState(false);
 
   const onWindowScroll = () => {
@@ -48,6 +48,7 @@ const Navbar = ({ toggleHandler }) => {
             label="Contact"
             theme={theme}
           />
+          <ThemeChanger />
         </ul>
         <div className="navbar--toggle" onClick={toggleHandler}>
           <FaBars />
