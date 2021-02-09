@@ -1,7 +1,8 @@
 @import '../../../assets/styles/variables.scss';
 
 .technology--container {
-  height: 100vh;
+  min-height: calc(100vh - 4rem);
+  padding: 3rem 0;
   
   &.light {
     background: $light;
@@ -11,6 +12,10 @@
   &.dark {
     background: $dark;
     color: $light;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 0;
   }
 }
 
