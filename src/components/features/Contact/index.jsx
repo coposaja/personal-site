@@ -17,8 +17,10 @@ const Contact = () => {
             type="outline"
             color="light"
           >
-            Get In Touch
-        </Button>
+            <a href="mailto:yohanzen.alexander@gmail.com">
+              Get In Touch
+            </a>
+          </Button>
         </div>
       </div>
     </div>

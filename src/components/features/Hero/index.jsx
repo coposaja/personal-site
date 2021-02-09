@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-scroll';
 
 import './Hero.scss';
 import darkBgUrl from '../../../assets/videos/darkBg.mp4';
@@ -19,7 +20,15 @@ const Hero = () => {
           color="light"
           size="small"
         >
-          About Me
+          <Link
+            to={"about-me"}
+            duration={500}
+            offset={-64}
+            smooth
+            spy
+          >
+            About Me
+          </Link>
         </Button>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { FaBullseye, FaHandshake, FaStaylinked } from 'react-icons/fa';
 import { GiFist } from 'react-icons/gi';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 import './About.scss';
 import { profileImg } from '../../../assets/images';
@@ -65,8 +66,16 @@ const About = () => {
               type="link"
               color="primary"
             >
-              Let's make something special
-              </Button>
+              <Link
+                to={"contact"}
+                duration={500}
+                offset={-64}
+                smooth
+                spy
+              >
+                Let's make something special
+              </Link>
+            </Button>
           </div>
         </Column>
         <Column lg={6} md={12}>
