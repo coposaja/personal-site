@@ -8,16 +8,16 @@ const Footer = () => {
     <footer>
       <div className="footer--wrapper">
         <div className="social--badges">
-          <a href="https://www.github.com/coposaja" rel="noreferrer" target="_blank" className="socmed linkedin">
+          <a href="https://www.linkedin.com/in/yohanzen-christanto-alexander-6054a0153/" rel="noreferrer" target="_blank" className="socmed linkedin">
             <FaLinkedin />
           </a>
           <a href="https://www.github.com/coposaja" rel="noreferrer" target="_blank" className="socmed github">
             <FaGithub />
           </a>
-          <a href="https://www.github.com/coposaja" rel="noreferrer" target="_blank" className="socmed telegram">
+          <a href="http://bit.ly/telegram-greeting" rel="noreferrer" target="_blank" className="socmed telegram">
             <FaTelegram />
           </a>
-          <a href="https://www.github.com/coposaja" rel="noreferrer" target="_blank" className="socmed whatsapp">
+          <a href="http://bit.ly/wa-greeting" rel="noreferrer" target="_blank" className="socmed whatsapp">
             <FaWhatsapp />
           </a>
         </div>
