@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-scroll';
+import { FaArrowRight } from 'react-icons/fa';
 
 import './Hero.scss';
 import darkBgUrl from '../../../assets/videos/darkBg.mp4';
@@ -19,16 +19,11 @@ const Hero = () => {
           type="outline"
           color="light"
           size="small"
+          component="link-scroll"
+          goTo="about-me"
         >
-          <Link
-            to={"about-me"}
-            duration={500}
-            offset={-64}
-            smooth
-            spy
-          >
-            About Me
-          </Link>
+          About Me
+          <FaArrowRight />
         </Button>
       </div>
     </div>

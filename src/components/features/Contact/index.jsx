@@ -16,10 +16,10 @@ const Contact = () => {
           <Button
             type="outline"
             color="light"
+            component="link"
+            goTo="mailto:yohanzen.alexander@gmail.com"
           >
-            <a href="mailto:yohanzen.alexander@gmail.com">
-              Get In Touch
-            </a>
+            Get In Touch
           </Button>
         </div>
       </div>

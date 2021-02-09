@@ -54,7 +54,20 @@
     color: $primary;
   }
 
-  button {
+  .btn {
     margin-top: 3rem;
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      margin-left: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      svg {
+        transform: rotateZ(90deg);
+      }
+    }
   }
 }
