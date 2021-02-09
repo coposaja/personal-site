@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import './Technology.scss';
 import { Column, TechIcon } from '../../shared';
@@ -11,10 +11,11 @@ import {
   nodeImg,
   typescriptImg
 } from '../../../assets/images';
+import { ThemeContext } from '../../../context';
 
 
 const Technology = () => {
-  const theme = 'light';
+  const [theme,] = useContext(ThemeContext);
 
   return (
     <div className={`technology--container ${theme}`} id="technology">

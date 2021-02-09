@@ -2,10 +2,10 @@ import React, { useCallback, useContext, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 import './Modal.scss';
-import { BackdropContext, ModalContext } from '../../../context';
+import { BackdropContext, ModalContext, ThemeContext } from '../../../context';
 
 const Modal = ({ children }) => {
-  const theme = 'light';
+  const [theme,] = useContext(ThemeContext);
   const [, setBackdropOpen] = useContext(BackdropContext);
   const [, setModalOpen] = useContext(ModalContext);
 

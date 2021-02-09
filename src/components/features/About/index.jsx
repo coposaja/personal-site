@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaBullseye, FaHandshake, FaStaylinked } from 'react-icons/fa';
 import { GiFist } from 'react-icons/gi';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
@@ -6,9 +6,11 @@ import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 import './About.scss';
 import { profileImg } from '../../../assets/images';
 import { Card, Button, Column, Octagon } from '../../shared';
+import { ThemeContext } from '../../../context';
 
 const About = () => {
-  const theme = 'light';
+  const [theme,] = useContext(ThemeContext);
+
   return (
     <div className={`about--container ${theme}`} id="about-me">
       <div className="about--wrapper">

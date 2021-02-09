@@ -4,10 +4,10 @@ import { useTransition } from 'react-spring';
 import './Project.scss';
 import { projectList } from '../../../constants';
 import { AnimatedColumn, Modal, ProjectCard, ProjectDetail, YearNavigator } from '../../shared';
-import { ModalContext } from '../../../context';
+import { ModalContext, ThemeContext } from '../../../context';
 
 const Project = () => {
-  const theme = 'light';
+  const [theme,] = useContext(ThemeContext);
   const [selectedYear, setSelectedYear] = useState(0);
   const [modalContent, setModalContent] = useState(null);
   const [projects, setProjects] = useState(projectList);

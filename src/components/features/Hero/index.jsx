@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import './Hero.scss';
 import darkBgUrl from '../../../assets/videos/darkBg.mp4';
 import lightBgUrl from '../../../assets/videos/lightBg.mp4';
 import { Button } from '../../shared';
+import { ThemeContext } from '../../../context';
 
 const Hero = () => {
-  const theme = 'light';
+  const [theme,] = useContext(ThemeContext);
+
   return (
     <div className={`hero--wrapper ${theme}`} id="home">
       <video src={theme === 'light' ? lightBgUrl : darkBgUrl} autoPlay loop muted />
