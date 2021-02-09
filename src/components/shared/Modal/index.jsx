@@ -2,9 +2,10 @@ import React, { useCallback, useContext, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 import './Modal.scss';
-import { BackdropContext, ModalContext } from '../../../context';
+import { BackdropContext, ModalContext, ThemeContext } from '../../../context';
 
 const Modal = ({ children }) => {
+  const [theme,] = useContext(ThemeContext);
   const [, setBackdropOpen] = useContext(BackdropContext);
   const [, setModalOpen] = useContext(ModalContext);
 
@@ -32,7 +33,7 @@ const Modal = ({ children }) => {
   }, [setBackdropOpen]);
 
   return (
-    <div className="modal">
+    <div className={`modal ${theme}`}>
       <span className="modal--close" onClick={dismissModal}>
         <FaTimes />
       </span>

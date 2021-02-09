@@ -2,7 +2,16 @@
 
 .technology--container {
   height: 100vh;
-  background: $light;
+  
+  &.light {
+    background: $light;
+    color: $dark;
+  }
+
+  &.dark {
+    background: $dark;
+    color: $light;
+  }
 }
 
 .technology--wrapper {

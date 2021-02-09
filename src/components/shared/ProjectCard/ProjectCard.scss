@@ -3,7 +3,7 @@
 .project-card {
   width: 100%;
   position: relative;
-  background: transparent;
+  background: $light;
   background-size: cover;
 
   &::before {
@@ -12,11 +12,24 @@
     padding-top: 100%;
   }
 
+  &.light {
+    .overlay {
+      background: $light;
+      color: $dark;
+    }
+  }
+
+  &.dark {
+    .overlay {
+      background: $dark;
+      color: $light;
+    }
+  }
+
   .overlay {
     width: 100%;
     height: 100%;
     padding: 1rem;
-    background: $light;
     position: absolute;
     top: 0;
     right: 0;

@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $dark;
   top: 0;
   right: 0;
   bottom: 0;
@@ -15,6 +14,22 @@
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 
+  &.dark {
+    background: $dark;
+
+    .close {
+      color: $light;
+    }
+  }
+
+  &.light {
+    background: $light;
+
+    .close {
+      color: $dark;
+    }
+  }
+
   &.open {
     transform: translateY(0);
     opacity: 1;
@@ -23,9 +38,8 @@
   .close {
     position: absolute;
     top: 1.25rem;
-    right: 1.25rem;
+    left: 1.25rem;
     font-size: 2rem;
-    color: $light;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }

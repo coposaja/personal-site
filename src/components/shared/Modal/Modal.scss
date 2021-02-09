@@ -1,7 +1,6 @@
 @import '../../../assets/styles/variables.scss';
 
 .modal {
-  background: $light;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -10,6 +9,16 @@
   z-index: 1001;
   overflow: hidden;
   animation: fade-in 0.5s linear 0s normal forwards;
+
+  &.light {
+    background: $light;
+    color: $dark;
+  }
+
+  &.dark {
+    background: $dark;
+    color: $light;
+  }
 
   .modal--close {
     position: absolute;

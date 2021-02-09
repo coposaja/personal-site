@@ -4,9 +4,10 @@ import { useTransition } from 'react-spring';
 import './Project.scss';
 import { projectList } from '../../../constants';
 import { AnimatedColumn, Modal, ProjectCard, ProjectDetail, YearNavigator } from '../../shared';
-import { ModalContext } from '../../../context';
+import { ModalContext, ThemeContext } from '../../../context';
 
 const Project = () => {
+  const [theme,] = useContext(ThemeContext);
   const [selectedYear, setSelectedYear] = useState(0);
   const [modalContent, setModalContent] = useState(null);
   const [projects, setProjects] = useState(projectList);
@@ -28,7 +29,7 @@ const Project = () => {
       description: description,
     });
     setIsOpenModal(true);
-  }
+  };
 
   useEffect(() => {
     setProjects(projectList.filter((project) => (
@@ -37,7 +38,7 @@ const Project = () => {
   }, [selectedYear]);
 
   return (
-    <div className="project--container" id="project">
+    <div className={`project--container ${theme}`} id="project">
       <div className="project--wrapper">
         <h1>Projects</h1>
 
@@ -51,6 +52,7 @@ const Project = () => {
             return (
               <AnimatedColumn lg={4} md={6} sm={12} noPadding key={key} style={props}>
                 <ProjectCard
+                  theme={theme}
                   title={item.title}
                   techs={item.techs}
                   backgroundUrl={item.backgroundUrl}
@@ -67,6 +69,7 @@ const Project = () => {
       {isOpenModal && modalContent && (
         <Modal>
           <ProjectDetail
+            theme={theme}
             {...modalContent}
           />
         </Modal>
