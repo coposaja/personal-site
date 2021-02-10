@@ -32,7 +32,7 @@ export const projectList = [
     backgroundUrl: iaiImg,
     imageUrls: Object.values({ ...iaiImages }),
     years: [2017],
-    description: "Information System that maintain membership of IAI (Ikatan Akuntan Indonesia)."
+    description: "Information System that maintain membership of IAI (Ikatan Akuntan Indonesia) for Admin perspective and Member perspective."
   },
   {
     title: "KAJ Pelayanan",
@@ -48,7 +48,7 @@ export const projectList = [
     backgroundUrl: bsqImg,
     imageUrls: Object.values({ ...bsqImages }),
     years: [2019],
-    description: "Portal for boarder of Binus Square (Bina Nusantara Univeristy dormitory) for information checking and sumbitting some administration forms."
+    description: "Portal for boarder of Binus Square (Bina Nusantara Univeristy dormitory) for information checking and submitting some administration forms."
   },
   {
     title: "Santo Leo Payroll",
@@ -56,7 +56,7 @@ export const projectList = [
     backgroundUrl: santoleoImg,
     imageUrls: Object.values({ ...santoleoImages }),
     years: [2019],
-    description: "Web application that is used by Santo Leo institution for managing their employees payroll and job transition at the schools under their insititution."
+    description: "Web application that is used by Santo Leo institution for managing their employees payroll and job transition at the schools under their institution."
   },
   {
     title: "Exam | Thesis | MyClass Microsites",
@@ -64,7 +64,7 @@ export const projectList = [
     backgroundUrl: binusImg,
     imageUrls: Object.values({ ...micrositeImages }),
     years: [2020],
-    description: "These microsites are the result of mitigating problems arising from the pandemic outbreak used for Online Exam, Softcover submission, and Lecture Schedule Checking."
+    description: "These microsites are the result of mitigating problems arising from the pandemic outbreak used for Online Exam, Softcover submission, and Lecture Schedule Online Class link checking"
   },
   {
     title: "dolla Landing Page",
@@ -80,6 +80,6 @@ export const projectList = [
     backgroundUrl: bimayImg,
     imageUrls: Object.values({ ...bimayImages }),
     years: [2020],
-    description: "Recreating Learning Management System and Course Management System for Bina Nusantara University"
+    description: "Recreating Learning Management System and Course Management System for Bina Nusantara University."
   },
 ]
