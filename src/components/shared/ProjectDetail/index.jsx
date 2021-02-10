@@ -41,6 +41,7 @@ const ProjectDetail = ({ theme, title, technologies, imageUrls, description }) =
         itemsToShow={1}
         renderArrow={myArrow}
         renderPagination={myPagination}
+        enableMouseSwipe={false}
         breakPoints={[
           { width: 1, showArrows: false },
           { width: 481, showArrows: true }
