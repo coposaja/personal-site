@@ -17,7 +17,7 @@ const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
-    setTheme(savedTheme);
+    setTheme(savedTheme ?? 'light');
   }, [])
 
   return (
