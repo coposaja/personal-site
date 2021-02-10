@@ -8,70 +8,78 @@ import {
   kajImg,
   santoleoImg,
 } from '../assets/images';
+import * as bimayImages from '../assets/images/projects/bimay';
+import * as bsqImages from '../assets/images/projects/bsq';
+import * as dollaImages from '../assets/images/projects/dolla';
+import * as micrositeImages from '../assets/images/projects/microsite';
+import * as bidukImages from '../assets/images/projects/biduk';
+import * as iaiImages from '../assets/images/projects/iai';
+import * as pelayananImages from '../assets/images/projects/pelayanan';
+import * as santoleoImages from '../assets/images/projects/santoleo';
 
 export const projectList = [
   {
     title: "BIDUK",
-    techs: "ASP.NET | N-Tier Framework",
+    techs: "ASP.NET | N-Tier Framework | SQL Server",
     backgroundUrl: bidukImg,
-    imageUrls: [1, 2, 3, 4],
+    imageUrls: Object.values({ ...bidukImages }),
     years: [2017, 2018, 2019],
     description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
   },
   {
     title: "IAI Membership",
-    techs: "ASP.NET | MVC Framework",
+    techs: "ASP.NET | MVC Framework | SQL Server",
     backgroundUrl: iaiImg,
-    imageUrls: [1, 2, 3, 4],
+    imageUrls: Object.values({ ...iaiImages }),
     years: [2017],
-    description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
+    description: "Information System that maintain membership of IAI (Ikatan Akuntan Indonesia)."
   },
   {
     title: "KAJ Pelayanan",
-    techs: "ASP.NET | MVC Framework | REST API",
+    techs: "ASP.NET | MVC Framework | REST API | SQL Server",
     backgroundUrl: kajImg,
-    imageUrls: [1, 2, 3, 4],
+    imageUrls: Object.values({ ...pelayananImages }),
     years: [2018, 2019],
-    description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
+    description: "Computerized administrations for four of seven sacraments of the Catholic Chruch (Baptism, First Communion, Confirmation, Matrimony). Which handle the administration from registration phase until the minting of sacrament certificate. Also integrating with BIDUK KAJ through Web Service."
   },
   {
     title: "Binus Square Boarder Portal",
-    techs: "ASP.NET | REST API | Single Page Application",
+    techs: "ASP.NET | REST API | Single Page Application | SQL Server",
     backgroundUrl: bsqImg,
-    imageUrls: [1, 2, 3, 4],
+    imageUrls: Object.values({ ...bsqImages }),
     years: [2019],
-    description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
+    description: "Portal for boarder of Binus Square (Bina Nusantara Univeristy dormitory) for information checking and sumbitting some administration forms."
   },
   {
     title: "Santo Leo Payroll",
     techs: ".NET Core | PostgreSQL",
     backgroundUrl: santoleoImg,
-    imageUrls: [1, 2, 3, 4],
+    imageUrls: Object.values({ ...santoleoImages }),
     years: [2019],
-    description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
+    description: "Web application that is used by Santo Leo institution for managing their employees payroll and job transition at the schools under their insititution."
   },
   {
     title: "Exam | Thesis | MyClass Microsites",
     techs: "ASP.NET | REST API",
     backgroundUrl: binusImg,
-    imageUrls: [1, 2, 3, 4],
+    imageUrls: Object.values({ ...micrositeImages }),
     years: [2020],
-    description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
+    description: "These microsites are the result of mitigating problems arising from the pandemic outbreak used for Online Exam, Softcover submission, and Lecture Schedule Checking."
   },
   {
     title: "dolla Landing Page",
     techs: "React | Styled Components",
     backgroundUrl: dollaImg,
-    imageUrls: [1, 2, 3, 4],
+    imageUrls: Object.values({ ...dollaImages }),
     years: [2020],
-    description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
+    description: "A simple landing page for a company that is only in my imagination for my own personal development."
   },
   {
     title: "Binusmaya 7",
     techs: "React | Typescript | Redux",
     backgroundUrl: bimayImg,
-    imageUrls: [1, 2, 3, 4],
+    imageUrls: Object.values({ ...bimayImages }),
     years: [2020],
-    description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
+    description: "Recreating Learning Management System and Course Management System for Bina Nusantara University"
   },
 ]

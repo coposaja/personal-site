@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import Carousel, { consts } from 'react-elastic-carousel';
 
 import './ProjectDetail.scss';
-import { sampleUrl } from '../../../assets/images';
 
 const ProjectDetail = ({ theme, title, technologies, imageUrls, description }) => {
   const carousel = useRef(null);
@@ -48,7 +47,7 @@ const ProjectDetail = ({ theme, title, technologies, imageUrls, description }) =
         ]}
       >
         {imageUrls.map((image, idx) => (
-          <img key={idx} src={sampleUrl} alt="sample" />
+          <img key={idx} src={image} alt="sample" />
         ))}
       </Carousel>
       <div className="project-detail--content">
