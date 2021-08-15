@@ -1,0 +1,9 @@
+{
+  "short_name": "Yohanzen Personal Site",
+  "name": "Personal Site of Yohanzen Christanto Alexader",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
