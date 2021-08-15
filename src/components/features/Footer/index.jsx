@@ -17,7 +17,7 @@ const Footer = () => {
           <a href="http://bit.ly/telegram-greeting" rel="noreferrer" target="_blank" className="socmed telegram">
             <FaTelegram />
           </a>
-          <a href="http://bit.ly/wa-greeting" rel="noreferrer" target="_blank" className="socmed whatsapp">
+          <a href="http://bit.ly/whatsapp-greeting" rel="noreferrer" target="_blank" className="socmed whatsapp">
             <FaWhatsapp />
           </a>
         </div>
