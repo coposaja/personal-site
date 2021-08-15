@@ -50,11 +50,11 @@
     margin: auto;
   }
 
-  &.first {
+  &.odd {
     max-width: 900px;
   }
 
-  &.secon {
+  &.even {
     max-width: 1000px;
   }
 }

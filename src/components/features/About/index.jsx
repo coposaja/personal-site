@@ -5,9 +5,9 @@ import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 import './About.scss';
-import { profileImg } from '../../../assets/images';
 import { Card, Button, Column, Octagon } from '../../shared';
 import { ThemeContext } from '../../../context';
+import { cdnAsset } from '../../../utils';
 
 const About = () => {
   const [theme,] = useContext(ThemeContext);
@@ -57,7 +57,7 @@ const About = () => {
       </div>
       <div className="whoami--content">
         <Column lg={6} md={12}>
-          <img src={profileImg} alt="Profile" />
+          <img src={cdnAsset('profile.svg')} alt="Profile" />
           <div className="whoami--bio">
             <p>
               I'm a Software Engineer in Indonesia. I have a serious passion for developing, designing, and creating applications.

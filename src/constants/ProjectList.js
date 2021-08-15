@@ -1,13 +1,3 @@
-import {
-  bidukImg,
-  bimayImg,
-  binusImg,
-  bsqImg,
-  dollaImg,
-  iaiImg,
-  kajImg,
-  santoleoImg,
-} from '../assets/images';
 import * as bimayImages from '../assets/images/projects/bimay';
 import * as bsqImages from '../assets/images/projects/bsq';
 import * as dollaImages from '../assets/images/projects/dolla';
@@ -16,12 +6,13 @@ import * as bidukImages from '../assets/images/projects/biduk';
 import * as iaiImages from '../assets/images/projects/iai';
 import * as pelayananImages from '../assets/images/projects/pelayanan';
 import * as santoleoImages from '../assets/images/projects/santoleo';
+import { cdnAsset } from '../utils';
 
 export const projectList = [
   {
     title: "BIDUK",
     techs: "ASP.NET | N-Tier Framework | SQL Server",
-    backgroundUrl: bidukImg,
+    backgroundUrl: cdnAsset('biduk.svg'),
     imageUrls: Object.values({ ...bidukImages }),
     years: [2017, 2018, 2019],
     description: "A website that maintains Catholics data especially those whom belong to some diocese that has been decided to use this app."
@@ -29,7 +20,7 @@ export const projectList = [
   {
     title: "IAI Membership",
     techs: "ASP.NET | MVC Framework | SQL Server",
-    backgroundUrl: iaiImg,
+    backgroundUrl: cdnAsset('iai.svg'),
     imageUrls: Object.values({ ...iaiImages }),
     years: [2017],
     description: "Information System that maintain membership of IAI (Ikatan Akuntan Indonesia) for Admin perspective and Member perspective."
@@ -37,7 +28,7 @@ export const projectList = [
   {
     title: "KAJ Pelayanan",
     techs: "ASP.NET | MVC Framework | REST API | SQL Server",
-    backgroundUrl: kajImg,
+    backgroundUrl: cdnAsset('kaj.svg'),
     imageUrls: Object.values({ ...pelayananImages }),
     years: [2018, 2019],
     description: "Computerized administrations for four of seven sacraments of the Catholic Chruch (Baptism, First Communion, Confirmation, Matrimony). Which handle the administration from registration phase until the minting of sacrament certificate. Also integrating with BIDUK KAJ through Web Service."
@@ -45,7 +36,7 @@ export const projectList = [
   {
     title: "Binus Square Boarder Portal",
     techs: "ASP.NET | REST API | Single Page Application | SQL Server",
-    backgroundUrl: bsqImg,
+    backgroundUrl: cdnAsset('bsq.svg'),
     imageUrls: Object.values({ ...bsqImages }),
     years: [2019],
     description: "Portal for boarder of Binus Square (Bina Nusantara Univeristy dormitory) for information checking and submitting some administration forms."
@@ -53,7 +44,7 @@ export const projectList = [
   {
     title: "Santo Leo Payroll",
     techs: ".NET Core | PostgreSQL",
-    backgroundUrl: santoleoImg,
+    backgroundUrl: cdnAsset('santoleo.svg'),
     imageUrls: Object.values({ ...santoleoImages }),
     years: [2019],
     description: "Web application that is used by Santo Leo institution for managing their employees payroll and job transition at the schools under their institution."
@@ -61,7 +52,7 @@ export const projectList = [
   {
     title: "Exam | Thesis | MyClass Microsites",
     techs: "ASP.NET | REST API",
-    backgroundUrl: binusImg,
+    backgroundUrl: cdnAsset('binus.svg'),
     imageUrls: Object.values({ ...micrositeImages }),
     years: [2020],
     description: "These microsites are the result of mitigating problems arising from the pandemic outbreak used for Online Exam, Softcover submission, and Lecture Schedule Online Class link checking"
@@ -69,7 +60,7 @@ export const projectList = [
   {
     title: "dolla Landing Page",
     techs: "React | Styled Components",
-    backgroundUrl: dollaImg,
+    backgroundUrl: cdnAsset('dolla.svg'),
     imageUrls: Object.values({ ...dollaImages }),
     years: [2020],
     description: "A simple landing page for a company that is only in my imagination for my own personal development."
@@ -77,7 +68,7 @@ export const projectList = [
   {
     title: "Binusmaya 7",
     techs: "React | Typescript | Redux",
-    backgroundUrl: bimayImg,
+    backgroundUrl: cdnAsset('bimay.svg'),
     imageUrls: Object.values({ ...bimayImages }),
     years: [2020],
     description: "Recreating Learning Management System and Course Management System for Bina Nusantara University."
