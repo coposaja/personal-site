@@ -85,8 +85,8 @@ const About = () => {
             </div>
             <div className="experience--detail">
               <h2>Software Engineer</h2>
-              <h3>at Bina Nusantara IT Division</h3>
-              <p>2017 - Current</p>
+              <h3>at GDP Labs</h3>
+              <p>2021 - Current</p>
             </div>
           </div>
           <div className="experience--card">
