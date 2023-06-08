@@ -4,7 +4,13 @@ import styles from './Intro.module.scss';
 
 const Intro = () => {
 	return (
-		<h1 className={styles.h1}>Intro</h1>
+		<div className={`${styles.wrapper} light-bg`}>
+			<div className={`${styles.content}`}>
+				<h1>
+					I'm <span>Yohanzen C. Alexander</span> a Software Engineer
+				</h1>
+			</div>
+		</div>
 	)
 }
 

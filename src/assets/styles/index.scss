@@ -1,4 +1,6 @@
-*{
+@import './variables.scss';
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,4 +9,14 @@
 
 body {
   font-size: 16px;
+}
+
+.dark-bg {
+  background-color: $dark-bg;
+  color: $light;
+}
+
+.light-bg {
+  background-color: $light-bg;
+  color: $dark;
 }
