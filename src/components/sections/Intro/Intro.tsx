@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Intro.scss';
+import styles from './Intro.module.scss';
 
 const Intro = () => {
 	return (
-		<div>Intro</div>
+		<h1 className={styles.h1}>Intro</h1>
 	)
 }
 
